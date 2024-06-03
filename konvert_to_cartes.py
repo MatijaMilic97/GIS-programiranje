@@ -1,3 +1,10 @@
+'''Ovo je pomoćna datoteka, odnosno Pajton kod u kome je izvršena transformacija koordinata
+iz geografskog koordinatnog sistema (EPSG: 4326) u projektovani koordinatni sistem (EPSG: 6316),
+koji je namenjen za Srbiju. Koordinate ispisane u decimalnim stepenima su iskopirane sa Google Mapa,
+kako bi se dobile koordinate ispisane u projekciji 6316 (MGI 1901 / Balkans zone 7).
+Koordinate predstavljaju lokaciju turističkih lokaliteta na teritoriji Niša
+i služiće za kreiranje glavnog projekta.'''
+
 import pyproj
 import numpy as np
 from pyproj import Transformer
