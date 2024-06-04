@@ -47,7 +47,7 @@ out_file = r'E:\MAS GIS\GIS programiranje\TourLoc\Lokaliteti.shp'  # Promeniti p
 df.to_file(out_file)
 
 #  Učitavanje datoteke Nis sa Niskom banjom.shp
-fp = r'E:\MAS GIS\GIS programiranje\TourLoc\Nis sa Niskom banjom.shp'
+fp = r'E:\MAS GIS\GIS programiranje\TourLoc\Nis sa Niskom banjom.shp'  # Promeniti putanju
 teritorija = gpd.read_file(fp)
 print(teritorija)
 print(teritorija.crs)
@@ -67,7 +67,7 @@ print(f'Povrsine u km2 iznose: \n {teritorija}')
 teritorija.crs = from_epsg(6316)
 print(teritorija.crs)
 
-#  Prikazivanje karte Niša i Niške banje, legendom i koordinatnom mrežom
+#  Prikazivanje karte Niša i Niške banje, sa legendom i koordinatnom mrežom
 teritorija.plot(column='Naziv opstine', cmap='tab10', legend=True)
 # internet sajt za colormaps https://www.analyticsvidhya.com/blog/2020/09/colormaps-matplotlib/
 plt.title('Opstine Nisa')
